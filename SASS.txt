@@ -1,0 +1,17 @@
+SASS
+
+VARIABLES para aplicar en los sass
+colores de la pagina
+text tamanio
+
+HEADER
+BARRA DE NAV
+
+MAIN
+section grilla 
+section flex 
+
+Footer
+REDES SOCIALES y otros enlaces
+
+

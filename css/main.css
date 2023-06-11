@@ -1,0 +1,56 @@
+/**** COLORES ****/
+nav {
+  background-color: #016392;
+}
+
+footer {
+  background-color: #231f20;
+}
+
+.textoPrincipal {
+  background-color: black;
+}
+
+.textoSecundario {
+  background-color: #DDE6ED;
+}
+
+/*** SQUARES ***/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  height: auto;
+  display: block;
+}
+.menu__logo {
+  display: flex;
+  justify-content: center;
+}
+.menu__logo img {
+  width: auto;
+  height: 100px;
+}
+.menu__barra {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.menu__barra__item {
+  background-color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.item:hover {
+  color: #73A9AD;
+}
+
+/*# sourceMappingURL=main.css.map */
