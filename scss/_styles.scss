@@ -3,33 +3,34 @@
     margin: 0;
   }
   
-body {
-    width: 100%;
-    height: 100vh;
-}
 .menu {
+    background-color: #016392;
+    width: 100%;
     height: auto;
-    display: block;
-    &__logo {
-        display: flex;
-        justify-content: center;
-        img {
-            width: auto;
-            height: 100px;
-        }
-        }
-    &__barra {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        &__item {
-            background-color: #fff;
-            padding: 10px;
-            text-transform: uppercase;
-        }
-        }
-    }
-.item:hover {
-    color: #73A9AD;
-}
+  &__logo {
+      @include centrado (flex, center);
+      width: 100%;
+      height: 100px;
+     img {
 
+      }
+     .tamanio {
+
+     }
+    }
+  &__barra {
+      @include centrado (flex, center);
+      background-color: #016392;
+      &__item {
+          background-color: #fff;
+          text-transform: uppercase;
+          list-style-type: none;
+          padding: 10px;
+          font-size: 20px;
+            a:hover {
+            color: #73A9AD
+            }  
+    }
+  }
+}
+/*---- COMPRA ----*
