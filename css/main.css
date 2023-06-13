@@ -1,18 +1,53 @@
-/* Error: expected more input.
- *    ,
- * 36 | /*---- COMPRA ----*
- *    |                    ^
- *    '
- *   scss\_styles.scss 36:20  @import
- *   scss\main.scss 3:9       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected more input.\a    \2577 \a 36 \2502  /*---- COMPRA ----*\d\a    \2502                     ^\a    \2575 \a   scss\\_styles.scss 36:20  @import\a   scss\\main.scss 3:9       root stylesheet";
+* {
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 3, 5em;
+}
+
+h2 {
+  font-size: 2, 7em;
+}
+
+p {
+  font-size: 2em;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  background-color: #016392;
+  width: 100%;
+  height: auto;
+}
+.menu__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+.menu__barra {
+  display: flex;
+  justify-content: center;
+  background-color: #016392;
+}
+.menu__barra__item {
+  background-color: #fff;
+  text-transform: uppercase;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+}
+.menu__barra__item a:hover {
+  color: #73A9AD;
+}
+
+/*# sourceMappingURL=main.css.map */
