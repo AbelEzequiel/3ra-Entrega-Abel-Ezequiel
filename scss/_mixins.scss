@@ -1,0 +1,11 @@
+@mixin flexible ($dis , $direction , $corte , $just , $align ) {
+display                     :   $dis         ; 
+flex-flow                   :   $direction   ;
+justify-content             :   $corte       ;
+align-items                 :   $align       ;
+
+}
+@mixin centrado ($dis , $corte) {
+display                     :   $dis          ;
+justify-content             :   $corte        ;
+}

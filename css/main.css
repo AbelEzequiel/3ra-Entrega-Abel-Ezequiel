@@ -1,0 +1,18 @@
+/* Error: expected more input.
+ *    ,
+ * 36 | /*---- COMPRA ----*
+ *    |                    ^
+ *    '
+ *   scss\_styles.scss 36:20  @import
+ *   scss\main.scss 3:9       root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected more input.\a    \2577 \a 36 \2502  /*---- COMPRA ----*\d\a    \2502                     ^\a    \2575 \a   scss\\_styles.scss 36:20  @import\a   scss\\main.scss 3:9       root stylesheet";
+}
