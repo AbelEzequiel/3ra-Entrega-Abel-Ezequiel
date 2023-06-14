@@ -17,97 +17,174 @@
 <body>
   <header>
       <nav>
-        <ul class="menu">
-           <div class="menu__logo">
-             <img src="./assets/fotos/foto logo/foto_blanco-removebg-preview.png" alt="">
-             <img class="menu__logo--tamanio"src="./assets/fotos/foto logo/klipartz.com.png" alt="">
-          </div>
-           <div class="menu__barra">
-             <li class="menu__barra__item"><a href="./contacto/contacto.html">contacto</a></li>
-             <li class="menu__barra__item"><a href="./compra/compra.html">compra</a></li>
-             <li class="menu__barra__item"><a href="index.html">inicio</a></li>
-             <li class="menu__barra__item"><a href="./gestoria/gestoria.html">gestoria</a></li>
-             <li class="menu__barra__item"><a href="./clientes/clientes.html">clientes</a></li>
-           </div>
-         </ul>
-      </nav>
-  </header>
+        <nav>
+          <!-- LOGO -->
+          <ul class="nav justify-content-center">
+    
+            <img class="lgoauto" src= "assets/fotos/foto logo/foto_blanco-removebg-preview.png" alt="auto-con-flecha">
+            <img class="lgoauto" src="assets/fotos/foto logo/klipartz.com.png" alt="llave-en-mano">
+          </ul>
+          <!-- BARRA NAV -->
+          <ul class="nav justify-content-center">
+          <!-- CAJA PADRE -->
+            <li class="nav-item">
+              <!-- CAJAS HIJAS -->
+              <a class="nav-link" href="contacto/contacto.html">Contacto</a>
+              <!-- ENLACES -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="compra/compra.html">Compra</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="gestoria/gestoria.html">Gestoria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clientes/clientes.html">Clientes</a>
+            </li>
+          </ul>
+        </nav>    
+    </header>
   <br>
   <main>
-     <section class="cajaCarrousel">
-      <div id="carouselExampleAutoplaying" class="carousel slide carrouselTamaño" data-bs-ride="carousel">
-        <div class="carousel-inner">  
-          <div class="carousel-item active">
-            <img class="fotoCarrusel" src="./assets/FOTOS/Fotos HD Autos/vw-gol.jpg" class="d-block w-100" alt="AutoGol">
-          </div>  
-          <div class="carousel-item">
-            <img class="fotoCarrusel" src="./assets/FOTOS/Fotos HD Autos/hombre-maneja-747x420.jpg" class="d-block w-100" alt="hombreManejando">
-          </div>
-          <div class="carousel-item">
-            <img class="fotoCarrusel" src="./assets/fotos/fotos hd autos/auto-ruta.jpg" class="d-block w-100" alt="auto-ruta">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-     </section> 
-        <br><br><!---- separacion de carrusel y grilla-->
-        <!----- GRILLA OFERTAS DESTACADAS ------>
-        <section class="contenedorGrilla">
-          <h2>Ofertas Destacadas</h2>
-        
-          <!---  Caja Fotos 1 ---->
-          <div class="contenedorGrilla__autoOFerta">
-            <img src="./assets/fotos/fotos-inicio-destacadas/Foto 1.jpg" alt="cocheenoferta">
-      
-          </div>
-          <!----  Caja MiniFotos 1 ---->
-          <div class="contenedorGrilla__dosautosOFerta">
-            <img src="./assets/fotos/fotos-inicio-destacadas/Foto 2.jpg" alt="cocheofertachico">
-            <img src="./assets/fotos/fotos-inicio-destacadas/Foto 3.jpg" alt="cocheofertachico">
-          </div>
-          <!----  Caja Fotos 2  ---->
-          <div class="contenedorGrilla__autoOFertaDos">
-          <img src="assets/fotos/fotos-inicio-destacadas/Foto a.jpg" alt="cocheenoferta">
-          </div>
-          <!-----  Cajas Mini Fotos 2  ----> 
-          <div class="contenedorGrilla__dosautosOFertaDos">
-            <img src="./assets/fotos/fotos-inicio-destacadas/foto b.jpg" alt="cocheofertachico">
-            <img src="./assets/fotos/fotos-inicio-destacadas/foto c.jpg" alt="cocheofertachico">
-       <!----- DESCRIPCION CAJA 1 ------>
-          </div>
-       <div class="contenedorinfo">
-        <ol class="lista__info">
-          <li>PRECIO USD: $ 10.300</li>
-          <li>MODELO:NISSAN NOTE 1.6 SENSE MT </li>
-          <li>AÑO: 2017 </li>
-          <li>CAJA: MANUAL </li>
-          <li>MOTOR: 1.6 16V Nafta (110Hp) </li> 
-          <li>KILOMETROS: 76.000</li> 
-         </ol>
-         <!---- DESCRIPCION CAJA 2 ----->
+   <!------ CARRUSEL CON IMAGENES ------>
+   <section class="container-fluid better">
+     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+       <div class="carousel-inner">  
+         <div class="carousel-item active">
+           <img class="img-fluid" src="./assets/FOTOS/Fotos HD Autos/vw-gol.jpg" class="d-block w-100" alt="AutoGol">
+         </div>  
+         <div class="carousel-item">
+           <img class="img-fluid" src="./assets/FOTOS/Fotos HD Autos/hombre-maneja-747x420.jpg" class="d-block w-100" alt="hombreManejando">
+         </div>
+         <div class="carousel-item">
+           <img class="img-fluid" src="./assets/fotos/fotos hd autos/auto-ruta.jpg" class="d-block w-100" alt="auto-ruta">
+         </div>
        </div>
-       <div class="contenedorinfodos">
-        <ol class="listaDestacada">
-          <li>PRECIO USD: $1.870.000 </li>
-          <li>MODELO: CORSA 2 GL</li>
-          <li>AÑO:2010</li>
-          <li>CAJA: MANUAL</li>
-          <li>MOTOR: 1.8 NAFTA </li> 
-          <li>KILOMETROS: 120.000</li>  
-         </ol>
+       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+       </button>
+     </div>
+   </section>
+   <br>
+    <!------ CONTENEDOR PRINCIPAL / OFERTAS DESTACADAS ------>
+   <section class="container mb-5">
+     <div class="row d-flex justify-content-center"></div>
+       <div class="col">
+         <h1 class="text-center p-3">Ofertas Destacadas</h1>
        </div>
+        <!------ IMAGEN OFERTAS DESTACADAS ------>
+       <div class="row row-gap-5 row-cols-1 row-cols-lg-2">
+         <div class="col">
+          <div class="row d-flex row-gap-2 flex-column flex-md-row justify-content-center">
+             <div class="col col-md-8">
+               <img class="cocheGrande w-100 object-fit-cover" src="./assets/fotos/fotos-inicio-destacadas/Foto 1.jpg" alt="cocheenoferta">
+             </div>
+            <!------ IMAGENES OFERTAS DESTACADAS ------>
+             <div class="col col-md-4">
+               <div class="d-flex flex-column justify-content-between h-100">
+                 <img class="img-fluid mb-2" src="./assets/fotos/fotos-inicio-destacadas/Foto 2.jpg" alt="cocheofertachico">
+                 <img class="img-fluid" src="./assets/fotos/fotos-inicio-destacadas/Foto 3.jpg" alt="cocheofertachico">
+               </div>
+             </div>
+           <!------ DESCRIPCION OFERTAS DESTACADAS ------>
+             <div class="col">
+               <div class="contenedorTextoAuto">
+                 <ol class="listaDestacada">
+                   <li>PRECIO USD: $ 10.300</li>
+                   <li>MODELO:NISSAN NOTE 1.6 SENSE MT </li>
+                   <li>CAJA: MANUAL </li>
+                   <li>AÑO: 2017 </li>
+                   <li>KILOMETROS: 76.000</li> 
+                   <li>MOTOR: 1.6 16V Nafta (110Hp) </li> 
+                  </ol>
+              </div>
+             </div>
+          </div>
+         </div>
+         <!------ IMAGENES OFERTAS DESTACADAS 2------>
+         <div class="col">
+           <div class="row d-flex flex-column row-gap-2 flex-md-row justify-content-center">
+             <div class="col col-md-8">
+               <img class="cocheGrande w-100 object-fit-cover" src="assets/fotos/fotos-inicio-destacadas/Foto a.jpg" alt="cocheenoferta">
+             </div>
 
-      </section>
-
+             <div class="col col-md-4">
+               <div class="d-flex flex-column justify-content-between h-100">
+                 <img class="img-fluid mb-2" src="./assets/fotos/fotos-inicio-destacadas/foto b.jpg" alt="cocheofertachico">
+                 <img class="img-fluid" src="./assets/fotos/fotos-inicio-destacadas/foto c.jpg" alt="cocheofertachico">
+               </div>
+             </div>
+ 
+             <div class="col">
+               <div class="contenedorTextoAuto">
+                 <ol class="listaDestacada">
+                   <li>PRECIO USD: $1.870.000 </li>
+                   <li>MODELO: CORSA 2 GL</li>
+                   <li>CAJA: MANUAL</li>
+                   <li>AÑO:2010</li>
+                   <li>KILOMETROS: 120.000</li>  
+                   <li>MOTOR: 1.8 NAFTA </li> 
+                 </ol>
+             </div>
+             </div>
+         </div>
+       </div>
+     </div>
+ 
+   </section>
+ 
+   <section class="container mb-5">
+     <h2 class="p-3 text-center">Ultimas Incorporaciones</h2>
+     <div class="row d-flex justify-content-center row-cols-1 row-gap-3 row-cols-lg-2">
+       <div class="col">
+         <img class="img-fluid" src="./assets/fotos compra/Camioneta .jpg" alt="autoPerfil">
+       </div>
+       <div class="col">
+         <img class="img-fluid" src="./assets/fotos compra/Camioneta 2.jpg" alt="autoPerfil">
+       </div>
+       <div class="col">
+         <img class="img-fluid" src="./assets/fotos compra/Camioneta 3.jpg" alt="autoPerfil">
+       </div>
+       <div class="col">
+         <img class="img-fluid" src="./assets/fotos compra/Auto 2.jpg" alt="autoPerfil">
+       </div>
+       <div class="col">
+         <img class="img-fluid" src="./assets/fotos compra/Auto 3.jpg" alt="autoPerfil">
+       </div>
+     </div>
+ </section>
+ 
   </main>
-    <!--- JAVASCRIP --->
-    <script src="js/bootstrap.min.js"></script>
-</body> 
-</html> 
+ 
+  <footer>
+     <section class="container-fluid">
+         <div class="row d-flex p-4 gap-4 flex-column align-items-center justify-content-center flex-md-row -bg">
+           <div class="col d-flex justify-content-center align-items-center">
+             <div class="redes d-flex gap-4">
+               <a href="">facebook</a>
+               <a href="">Instagram</a>
+               <a href="">Twitter</a>  
+             </div>
+           </div>
+           <div class="col d-flex justify-content-center align-items-center">
+               <p class="text-center">Todos los derechos reservados</p>
+           </div>
+           <div class="col d-flex justify-content-center align-items-center">
+              <p>contacto</p>
+           </div>
+         </div>
+     </section>
+  </footer>
+ 
+   <!--- JAVASCRIP --->
+   <script src="js/bootstrap.min.js"></script>
+ </body> 
+ </html>    
