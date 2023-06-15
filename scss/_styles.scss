@@ -3,7 +3,6 @@
     margin: 0;
   }
 body {
-  background-color: #fff;
   font-family: 'roboto';
 }
 
@@ -12,8 +11,10 @@ h1 , h2 , footer {
   background-color: #3F4E4F;
 }
 h2 { 
-  background-color: #3F4E4F;
   color: #fff;
+}
+.separacion {
+  letter-spacing: 3px;
 }
 p {
   font-size: 2em;
@@ -23,63 +24,28 @@ ul, ol {
 }
 
 /*** BARRA DE NAV ***/  
-header {
-    background-color: #016392;
-}
+
 .nav-item {
     background-color: #fff;
+    .nav-link {
+      font-family: "SF_Collegiate_Solid";
+      text-transform: uppercase;
+      list-style-type: none;
+      display: flex;
+      color: black;                
+    }
 }
+.nav-link:hover {
+  color: #73A9AD
+  }
 .lgoauto {
     height: 100px;
     width: auto;
 }
-.nav-link {
-    font-family: "SF_Collegiate_Solid";
-    text-transform: uppercase;
-    list-style-type: none;
-    color: black;                
-    .nav-link:hover {
-    color: #73A9AD
-    }
-}
-.imagen{
-  height: fit-content;
-}
-/*** info contenedor ***/
-.contenedorTextoAuto {
-  background-color:  #3F4E4F ;
-  font-size: 2.0em;
-  color: #FFF4F4;
-  font-family: 'roboto';
-  margin: 3px solid #016392;
-}
-/*** CLIENTES ***/
-.containerClientes {
-  height: auto;
-  width: 90%;
-  padding: 5px;
-  margin: 10px 75px;
-  display: block;
-  &__titulo {
-  letter-spacing: 2px;
-  
-  } 
-  &__imgclientes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color:  #3F4E4F ;
-    margin-bottom: 15px;
-    padding: 15px;
-    
-    img {
-      width: auto;
-      height: 300px;
-      margin: 5px;
-      animation-name: move ;
-      animation-duration: 4s ;
-    }
-  } 
+/**** CAROUSEL ****/
+.carousel-item img{
+  width: 100%;
+  transform: none;
 }
 @media (min-width: 1024px){
   .carousel-inner{
@@ -93,30 +59,49 @@ header {
 .better{
   --bs-gutter-x:0;
 }
-/**** CLIENTES ****/
-.imgclientes:hover {
-      width: 500px;
-  }
-  @keyframes move{
-    0%{
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-    
-    50%{
-      -webkit-transform: scale(0.01);
-      transform: scale(0.01);
-    }
-    
-    100%{
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-} 
-.containerGestor {
-  height: auto;
-  width: 90%;
-  padding: 10px;
-  margin: 20px 75px;
-  display: block;
+.imagen{
+  height: fit-content;
 }
+/*** info contenedor ***/
+.contenedorTextoAuto {
+  font-size: 2.0em;
+  color: #FFF4F4;
+  border: 5px solid #016392 ;
+}
+/*** COMPRA ***/
+.containerCompra , .containerClientes {
+  margin: 1px solid  #016392;
+  .compra , .clientes {
+    justify-content: space-between;
+    border-top: 1px solid #016392 ;
+    padding: 20px;
+    
+    img {
+      transition: transform .3s ease;
+    }
+    img:hover {
+      transform: scale(1.1); 
+      
+    }
+  }
+
+}
+
+
+/**** CLIENTES ****/
+//   @keyframes scale {
+//     0%{
+//       -webkit-transform: scale(1);
+//       transform: scale(1);
+//     }
+    
+//     50%{
+//       -webkit-transform: scale(0.01);
+//       transform: scale(0.01);
+//     }
+    
+//     100%{
+//       -webkit-transform: scale(1);
+//       transform: scale(1);
+//     }
+// }

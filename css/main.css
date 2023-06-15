@@ -1,0 +1,111 @@
+body {
+  background-color: #fff;
+}
+
+header {
+  background-color: #016392;
+}
+
+.containerCompra, .containerClientes, footer, .contenedorTextoAuto {
+  background-color: #3F4E4F;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "roboto";
+}
+
+h1, h2, footer {
+  font-size: 3, 5em;
+  background-color: #3F4E4F;
+}
+
+h2 {
+  color: #fff;
+}
+
+.separacion {
+  letter-spacing: 3px;
+}
+
+p {
+  font-size: 2em;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/*** BARRA DE NAV ***/
+.nav-item {
+  background-color: #fff;
+}
+.nav-item .nav-link {
+  font-family: "SF_Collegiate_Solid";
+  text-transform: uppercase;
+  list-style-type: none;
+  display: flex;
+  color: black;
+}
+
+.nav-link:hover {
+  color: #73A9AD;
+}
+
+.lgoauto {
+  height: 100px;
+  width: auto;
+}
+
+/**** CAROUSEL ****/
+.carousel-item img {
+  width: 100%;
+  transform: none;
+}
+
+@media (min-width: 1024px) {
+  .carousel-inner {
+    height: 70vh;
+  }
+  .carousel-item img {
+    transform: translateY(-150px);
+  }
+}
+.better {
+  --bs-gutter-x:0;
+}
+
+.imagen {
+  height: fit-content;
+}
+
+/*** info contenedor ***/
+.contenedorTextoAuto {
+  font-size: 2em;
+  color: #FFF4F4;
+  border: 5px solid #016392;
+}
+
+/*** COMPRA ***/
+.containerCompra, .containerClientes {
+  margin: 1px solid #016392;
+}
+.containerCompra .compra, .containerCompra .clientes, .containerClientes .compra, .containerClientes .clientes {
+  justify-content: space-between;
+  border-top: 1px solid #016392;
+  padding: 20px;
+}
+.containerCompra .compra img, .containerCompra .clientes img, .containerClientes .compra img, .containerClientes .clientes img {
+  transition: transform 0.3s ease;
+}
+.containerCompra .compra img:hover, .containerCompra .clientes img:hover, .containerClientes .compra img:hover, .containerClientes .clientes img:hover {
+  transform: scale(1.1);
+}
+
+/**** CLIENTES ****/
+
+/*# sourceMappingURL=main.css.map */
