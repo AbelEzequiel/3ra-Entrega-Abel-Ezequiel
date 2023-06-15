@@ -70,7 +70,7 @@ ul, ol {
 }
 /*** COMPRA ***/
 .containerCompra , .containerClientes {
-  margin: 1px solid  #016392;
+  border: 5px solid #016392;   
   .compra , .clientes {
     justify-content: space-between;
     border-top: 1px solid #016392 ;
@@ -78,6 +78,8 @@ ul, ol {
     
     img {
       transition: transform .3s ease;
+      object-fit: cover;
+      object-position: center;
     }
     img:hover {
       transform: scale(1.1); 
