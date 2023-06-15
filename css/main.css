@@ -6,7 +6,7 @@ header {
   background-color: #016392;
 }
 
-.containerCompra, .containerClientes footer, .contenedorTextoAuto {
+.containerCompra, .containerClientes, footer, .contenedorTextoAuto {
   background-color: #3F4E4F;
 }
 
@@ -99,28 +99,13 @@ ul, ol {
   border-top: 1px solid #016392;
   padding: 20px;
 }
-
-/*** CLIENTES ***/
-.imgclientes:hover {
-  width: 500px;
+.containerCompra .compra img, .containerCompra .clientes img, .containerClientes .compra img, .containerClientes .clientes img {
+  transition: transform 0.3s ease;
+}
+.containerCompra .compra img:hover, .containerCompra .clientes img:hover, .containerClientes .compra img:hover, .containerClientes .clientes img:hover {
+  transform: scale(1.1);
 }
 
-@keyframes move {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(0.01);
-    transform: scale(0.01);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-.clintes img {
-  object-fit: cover;
-}
+/**** CLIENTES ****/
 
 /*# sourceMappingURL=main.css.map */
