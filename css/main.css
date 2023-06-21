@@ -83,27 +83,50 @@ ul, ol {
   height: fit-content;
 }
 
-/*** info contenedor ***/
-.contenedorTextoAuto {
-  font-size: 2em;
-  color: #FFF4F4;
-  border: 5px solid #016392;
-}
-
 /*** COMPRA ***/
-.containerCompra, .containerClientes {
-  margin: 1px solid #016392;
-}
-.containerCompra .compra, .containerCompra .clientes, .containerClientes .compra, .containerClientes .clientes {
-  justify-content: space-between;
-  border-top: 1px solid #016392;
+.containerClientes .clientes {
   padding: 20px;
 }
-.containerCompra .compra img, .containerCompra .clientes img, .containerClientes .compra img, .containerClientes .clientes img {
+.containerClientes img {
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  object-position: center;
+}
+.containerClientes img img:hover {
+  transform: scale(1.1);
+}
+
+.containerCompra .compra {
+  width: 100%;
+}
+.containerCompra .compra .card-imagen {
+  position: relative;
   transition: transform 0.3s ease;
 }
-.containerCompra .compra img:hover, .containerCompra .clientes img:hover, .containerClientes .compra img:hover, .containerClientes .clientes img:hover {
+.containerCompra .compra .card-imagen img:hover {
   transform: scale(1.1);
+}
+.containerCompra .compra .card-imagen .card-body {
+  background-color: rgba(25, 96, 184, 0.8);
+  color: #fff;
+  position: absolute;
+  top: 143px;
+  left: 15px;
+  text-align: center;
+}
+.containerCompra .compra .card-imagen .card-body .card-body:hover {
+  opacity: 1;
+  background-color: rgba(25, 96, 184, 0.8);
+  top: 143px;
+  left: 15px;
+  transform: scale(1.1);
+}
+.containerCompra .compra .card-imagen .card-body .link {
+  color: transparent;
+  transition: transform, 1s ease-in-out;
+}
+.containerCompra .compra .card-imagen .card-body .link .link:hover {
+  transition: scale(1.1);
 }
 
 /**** CLIENTES ****/

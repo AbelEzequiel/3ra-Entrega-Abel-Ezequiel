@@ -63,8 +63,8 @@ ul, ol {
   height: fit-content;
 }
 /*** COMPRA ***/
-.containerCompra , .containerClientes {
-  .compra , .clientes {
+.containerClientes {
+  .clientes {
     padding: 20px;
   }
     img {
@@ -79,8 +79,45 @@ ul, ol {
   }
 
 }
+.containerCompra {
+  .compra {
+    width: 100%;
 
+    .card-imagen {
+     position: relative;
+     transition: transform .3s ease;
+     img:hover {
+      transform: scale(1.1);
+     }
+    
+    .card-body {
+      background-color:rgba(25,96,184, 0.8);
+      color: #fff;
+      position: absolute;
+      top: 143px;
+      left: 15px;
+      text-align: center;
+      .card-body:hover {  
+        opacity: 1;
+        background-color: rgba(25,96,184, 0.8);
+        top: 143px;
+        left: 15px;
+        transform: scale(1.1);
+      }
 
+    
+    .link {
+      color: transparent;
+      transition: transform, 1s ease-in-out;
+      .link:hover {
+        transition: scale(1.1);
+       
+      }
+      }
+    }
+    }
+}
+}
 /**** CLIENTES ****/
 //   @keyframes scale {
 //     0%{
