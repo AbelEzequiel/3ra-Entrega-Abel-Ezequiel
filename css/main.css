@@ -6,8 +6,20 @@ header {
   background-color: #016392;
 }
 
-.containerCompra, .containerClientes, footer, .contenedorTextoAuto {
+.containerCompra, .containerClientes, .contenedorTextoAuto {
+  background-color: #016392;
+}
+
+footer {
   background-color: #3F4E4F;
+}
+
+h1, h2 {
+  background-color: #016392;
+}
+
+h3, .footertext {
+  color: #fff;
 }
 
 * {
@@ -19,9 +31,8 @@ body {
   font-family: "roboto";
 }
 
-h1, h2, footer {
+h1, h2 {
   font-size: 3, 5em;
-  background-color: #3F4E4F;
 }
 
 h2 {
@@ -33,10 +44,10 @@ h2 {
 }
 
 p {
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 
-ul, ol {
+ul, ol, li {
   list-style: none;
 }
 
@@ -127,6 +138,15 @@ ul, ol {
 }
 .containerCompra .compra .card-imagen .card-body .link .link:hover {
   transition: scale(1.1);
+}
+
+footer .nav-footer .menu-footer a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+footer .nav-footer .menu-footer a:hover {
+  text-decoration: underline;
 }
 
 /**** CLIENTES ****/

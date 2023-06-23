@@ -4,6 +4,16 @@ body {
 header {
     background-color: #016392;
 }
-.containerCompra , .containerClientes, footer , .contenedorTextoAuto {
-    background-color:  #3F4E4F;
+.containerCompra , .containerClientes, .contenedorTextoAuto {
+    background-color:  #016392;
+}
+footer {
+    background-color: #3F4E4F;
+}
+
+h1 , h2 {
+    background-color: #016392;
+}
+h3 , .footertext {
+    color: #fff;
 }
