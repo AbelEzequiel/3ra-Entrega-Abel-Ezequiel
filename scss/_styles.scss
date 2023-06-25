@@ -72,7 +72,7 @@ ul, ol, li {
       object-position: center;
 
     img:hover {
-      transform: scale(1.1); 
+      transform: scale(1.1);
       
     }
   }
@@ -80,43 +80,49 @@ ul, ol, li {
 }
 .containerCompra {
   .compra {
-    width: 100%;
-
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
     .card-imagen {
-     position: relative;
-     transition: transform .3s ease;
-     img:hover {
-      transform: scale(1.1);
-     }
-    
+      position: relative;
+    }
     .card-body {
-      background-color:rgba(25,96,184, 0.8);
-      color: #fff;
-      position: absolute;
-      top: 143px;
-      left: 15px;
-      text-align: center;
-      .card-body:hover {  
-        opacity: 1;
-        background-color: rgba(25,96,184, 0.8);
-        top: 143px;
-        left: 15px;
-        transform: scale(1.1);
-      }
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 92, 23, 0.377);
+    transform: translateY(100%);
+    transition: all 2s;
+    text-align: center;
+    }
+    .card-body:hover {
+    transform: translateY(0);
+    transition: all 1s;
+    }
 
-    
-    .link {
-      color: transparent;
-      transition: transform, 1s ease-in-out;
-      .link:hover {
-        transition: scale(1.1);
-       
-      }
-      }
-    }
-    }
+
+
+  }
 }
-}
+/**** Compra ****/
+// @keyframes precio {
+//   0%{
+//     background-color: transparent;
+//   }
+  
+//   50%{
+//     background-color: red ;
+//   }
+  
+//   100%{
+//     background-color: blue;
+//   }
+// }
+
+
 footer {
   .nav-footer {
 
@@ -134,21 +140,11 @@ footer {
    }
   }
 }
- 
-/**** CLIENTES ****/
-//   @keyframes scale {
-//     0%{
-//       -webkit-transform: scale(1);
-//       transform: scale(1);
-//     }
-    
-//     50%{
-//       -webkit-transform: scale(0.01);
-//       transform: scale(0.01);
-//     }
-    
-//     100%{
-//       -webkit-transform: scale(1);
-//       transform: scale(1);
-//     }
-// }
+
+.textoo {
+  .text {
+    font-size: 1.5rem;
+    text-decoration: solid;
+  }
+
+}

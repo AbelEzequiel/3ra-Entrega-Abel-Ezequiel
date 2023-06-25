@@ -108,38 +108,31 @@ ul, ol, li {
 }
 
 .containerCompra .compra {
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 .containerCompra .compra .card-imagen {
   position: relative;
-  transition: transform 0.3s ease;
 }
-.containerCompra .compra .card-imagen img:hover {
-  transform: scale(1.1);
-}
-.containerCompra .compra .card-imagen .card-body {
-  background-color: rgba(25, 96, 184, 0.8);
-  color: #fff;
+.containerCompra .compra .card-body {
+  content: "";
   position: absolute;
-  top: 143px;
-  left: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 92, 23, 0.377);
+  transform: translateY(100%);
+  transition: all 2s;
   text-align: center;
 }
-.containerCompra .compra .card-imagen .card-body .card-body:hover {
-  opacity: 1;
-  background-color: rgba(25, 96, 184, 0.8);
-  top: 143px;
-  left: 15px;
-  transform: scale(1.1);
-}
-.containerCompra .compra .card-imagen .card-body .link {
-  color: transparent;
-  transition: transform, 1s ease-in-out;
-}
-.containerCompra .compra .card-imagen .card-body .link .link:hover {
-  transition: scale(1.1);
+.containerCompra .compra .card-body:hover {
+  transform: translateY(0);
+  transition: all 1s;
 }
 
+/**** Compra ****/
 footer .nav-footer .menu-footer a {
   color: #fff;
   font-size: 1.2rem;
@@ -149,6 +142,9 @@ footer .nav-footer .menu-footer a:hover {
   text-decoration: underline;
 }
 
-/**** CLIENTES ****/
+.textoo .text {
+  font-size: 1.5rem;
+  text-decoration: solid;
+}
 
 /*# sourceMappingURL=main.css.map */
