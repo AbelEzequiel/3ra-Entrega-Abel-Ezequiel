@@ -107,32 +107,52 @@ ul, ol, li {
   transform: scale(1.1);
 }
 
-.containerCompra .compra {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
 .containerCompra .compra .card-imagen {
   position: relative;
+  overflow: hidden;
+}
+.containerCompra .compra .card-imagen:hover {
+  transform: translateY(0%);
+  transition: all 0.2s;
+  transform: scale(1.1);
 }
 .containerCompra .compra .card-body {
-  content: "";
   position: absolute;
-  top: 0;
+  top: -200px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 92, 23, 0.377);
-  transform: translateY(100%);
-  transition: all 2s;
+  transform: translateY(0%);
+  transition: all 1s 0.1s;
   text-align: center;
 }
+.containerCompra .compra .card-body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: all 1s 1s;
+}
 .containerCompra .compra .card-body:hover {
-  transform: translateY(0);
+  transform: translateY(0%);
+  top: 0;
+  left: 0;
   transition: all 1s;
+  text-align: center;
+  background-color: rgba(0, 92, 86, 0.377);
+}
+.containerCompra .compra .card-body:hover .card-title {
+  transform: translateY(0%);
+  color: #fff;
+}
+.containerCompra .compra .card-body:hover .link {
+  color: red;
+}
+.containerCompra .compra .card-body:hover a:hover {
+  color: brown;
 }
 
-/**** Compra ****/
 footer .nav-footer .menu-footer a {
   color: #fff;
   font-size: 1.2rem;
