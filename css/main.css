@@ -7,7 +7,7 @@ header {
 }
 
 .containerCompra, .containerClientes, .contenedorTextoAuto {
-  background-color: #016392;
+  background-image: linear-gradient(to bottom, #016392, #48778d, #788389);
 }
 
 footer {
