@@ -9,21 +9,19 @@ body {
 h1 , h2 {
   font-size: 3,5em;
 }
-h2 { 
-  color: #fff;
-}
 .separacion {
   letter-spacing: 3px;
 }
 p {
   font-size: 1.5rem;
 }
-ul, ol, li {
+ul {
   list-style: none;
 }
-
+ol {
+  list-style: disc;
+}
 /*** BARRA DE NAV ***/  
-
 .nav-item {
     background-color: #fff;
     .nav-link {
@@ -50,7 +48,6 @@ ul, ol, li {
   .carousel-inner{
       height: 70vh;
   }
-
   .carousel-item img{
   transform: translateY(-150px);
   }
@@ -61,26 +58,66 @@ ul, ol, li {
 .imagen{
   height: fit-content;
 }
-/*** COMPRA ***/
+/*** Clientes ***/
 .containerClientes {
   .clientes {
-    padding: 20px;
-  }
-    img {
-      transition: transform .3s ease;
+    border: 3px solid #443d38;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ 
+    .cluno {
       object-fit: cover;
-      object-position: center;
-
-    img:hover {
-      transform: scale(1.1);
-      
+      height: fit-content;
+      animation: alternate movimiento 3s;
     }
-  }
+    .cldos {
+      object-fit: cover;
+      height: fit-content;
+      animation: alternate movimientodos 3s;
+    }
+    .cltres {
+      object-fit: cover;
+      height: fit-content;
+      animation: alternate linear movimientotres 3s 2s;
 
+    } 
+    .clcuatro {
+      object-fit: cover;
+      height: fit-content;
+      animation: alternate movimientocuatro 3s 1s;
+    }
+    .cluno:hover , .cldos:hover, .cltres:hover, .clcuatro:hover {
+      transition: all .2s;
+      transform: scale(1.1);
+    }
 }
+} 
+@keyframes movimiento {
+  0% {transform: translateY(100%);}
+  100% {transform: translateY(0%);}
+}
+@keyframes movimientodos {
+  0% {transform: translateX(100%);}
+  100% {transform: translateX(0%);}
+}
+@keyframes movimientotres {
+  0% {transform: translateY(0%);}
+  20% {transform: translateY(70%);}
+  50% {transform: translateY(100%);}
+  80% {transform: translateY(70%);}
+  100% {transform: translateY(0%);}
+}
+@keyframes movimientocuatro {
+  0% {transform: translateX(0%);}
+  50% {transform: translateX(100%);}
+  100% {transform: translateX(0%);}
+}
+/*** Compra ***/
 .containerCompra {
   .compra {
-
+     border: 3px solid #443d38;
+     padding-top: 20px;
+     padding-bottom: 20px;
     .card-imagen {
       position: relative;
       overflow: hidden;
@@ -93,13 +130,14 @@ ul, ol, li {
     }
     .card-body {
       position: absolute;
-      top: -200px;
+      top: -100px;
       left: 0;
       width: 100%;
       height: 100%;
       transform: translateY(0%);
       transition: all 1s .1s;
       text-align: center;
+      color: #fff;
 
     }
     .card-body::after {
@@ -132,7 +170,177 @@ ul, ol, li {
 
   }
 }
+.cocheChico {
+  border-radius: 5px;
+}
+/*** Imagenes Ofertas Destacadas 1 ***/
+  .cajaFoto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  .contenido {
+    position: absolute; 
+    top: 285px;
+    left: 225px;
+    text-align: end;
+    width: 50%;   
+    height: 50%;
+    transform: translateY(0%) translateX(0%);
+    transition: all 1s;
+  }
+  .contenido::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(20%)translateX(20%);
+    transition: all 2s ;
+  }
+  .contenido:hover {
+    transform: translateY(0%) translateX(0%);
+    transition-timing-function: ease-in-out;
+    transition-delay: .5s;
+    top: 206px;  
+    left: 206px;
+    transition: all 1s;
+    background-image: url("../assets/fotos/fotos-inicio-destacadas/Foto\ 4.jpg");
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .link {
+    color: red;
+    background: none;
+  }
+  a:hover {
+    color: brown;
+  }
+  /*** Oferta 2 ***/
+  .contenidoDos {
+    position: absolute; 
+    top: 285px;
+    left: 225px;
+    width: 50%;   
+    height: 50%;
+    text-align: end;
+    justify-content: center;
+    transform: translateY(0%) translateX(0%);
+    transition: all 1s;
+  }
+  .contenidoDos::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(20%)translateX(20%);
+    transition: all 2s ;
+  }
+  .contenidoDos:hover {
+    transform: translateY(0%) translateX(0%);
+    transition-timing-function: ease-in-out;
+    transition-delay: .5s;
+    top: 206px;  
+    left: 206px;
+    transition: all 1s;
+    background-image: url("../assets/fotos/fotos-inicio-destacadas/foto\ d.jpg");
+    background-size: cover;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 360px) {
+  .cajaFoto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  .contenido {
+  position: absolute; 
+  top: 300px;
+  left: 260px;
+  width: 40%;   
+  height: 40%;
+  transform: translateY(0%) translateX(0%);
+  transition: all 1s;
+}
+}
+}
+@media (max-width: 1200px) {
+  .cajaFoto {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  .contenido {
+  position: absolute; 
+  top: 176px;
+  left: 153px;
+  width: 40%;   
+  height: 40%;
+  transform: translateY(0%) translateX(0%);
+  transition: all 1s;
+}
+}
+} 
+.cocheChico:hover , .cocheGrande:hover {
+  transition: all .2s;
+  transform: scale(1.1);
+}
+/*** Imagenes Ultimas Incorporaciones ***/
+.cajaImagen {
+  position: relative;
+  overflow: hidden;
+  .interior {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0%) translateX(0%);
+    transition: all 1s .1s;
+    text-align: center;
+    color: #fff;
 
+  }
+
+  .interior::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%)translateX(100%);
+    transition: all 1s 1s;
+  }
+  .interior:hover {
+    transform: translateY(0%) translateX(0%);
+    top: 0px;  
+    left: 0px;
+    transition: all 1s;
+    text-align: center;
+    background-color: rgba(0, 92, 86, 0.377);
+  }
+  .link {
+    color: red;
+  }
+  a:hover {
+    color: brown;
+  }
+} 
+/*** Texto INDEX ***/
+.listaDestacada {
+  font-size: 2rem;
+  margin-bottom: 2px;
+  background-image: linear-gradient(
+    to right,
+    #F4B183 30%,
+    #443d38 70%,
+  
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: solid 3px #443d38 ;
+  animation: color 10s linear infinite;
+}
+@media (max-width: 1400px){
+  .listaDestacada {
+    font-size: 1rem;
+  }
+}
+/*** Footer ***/
 footer {
   .nav-footer {
 
@@ -149,8 +357,11 @@ footer {
     
    }
   }
+} 
+.ico:hover {
+  transition: all .2s;
+  transform: scale(1.05);
 }
-  
 .textoo {
   .text {
     font-size: 1.5rem;
@@ -158,3 +369,18 @@ footer {
   }
 
 }
+/*** Mapa de Sitio ***/
+.orden {
+  font-size: 1.6rem;
+
+    .link {
+      color: #9ead73; 
+      text-decoration: none;
+      }   
+      .link:hover {
+        color: #ad9773; 
+              text-decoration: underline;
+    
+      }
+
+  }

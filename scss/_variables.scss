@@ -5,15 +5,58 @@ header {
     background-color: #016392;
 }
 .containerCompra , .containerClientes, .contenedorTextoAuto {
-    background-image: linear-gradient(to bottom,#016392, #48778d, #788389)
+    background-image: linear-gradient(to bottom,#016392, #48778d, #788389);
 }
 footer {
     background-color: #3F4E4F;  
 }
-
-h1 , h2 {
-    background-color: #016392;
+h1 {
+    background-image: linear-gradient(
+        to right,
+        #F4B183 30%,
+        #443d38 70%,
+      
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: color 10s linear infinite;
+      
+}
+h2 {
+    background-image: linear-gradient(
+        to right,
+        #f4d283c5 30%,
+        #443d38 70%,
+      
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: color 5s linear infinite;
+      margin: 0; 
+      
 }
 h3 , .footertext {
     color: #fff;
 }
+@keyframes color {
+    0% {background-position: 0% 0%;}
+    50% {background-position: -80rem 0%}
+    100% {background-position: 0% 0%;}
+  }
+  /*** MAPA DE SITIO ***/
+  .decoracion {
+    background-image: linear-gradient(
+        180deg,
+        #c2bbaf,
+        #3c4e5d,    
+        );
+    border-radius: 5px;   
+    animation: fondo 15s linear infinite;
+}
+@keyframes fondo {
+    0% {background-position: 0 50rem;}
+    50% {background-position: 50rem 80rem;}
+    100% {background-position: 0rem 80rem;}
+  }
