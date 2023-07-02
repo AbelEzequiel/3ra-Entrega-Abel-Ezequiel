@@ -180,27 +180,28 @@ ol {
   border-radius: 5px;
   .contenido {
     position: absolute; 
-    top: 285px;
-    left: 225px;
-    text-align: end;
-    width: 50%;   
-    height: 50%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    width: 100%;   
+    height: 100%;
     transform: translateY(0%) translateX(0%);
     transition: all 1s;
   }
-  .contenido::after {
+  &::after {
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 100%;
-    transform: translateY(20%)translateX(20%);
+    transform: translateY(100%)translateX(100%);
     transition: all 2s ;
   }
   .contenido:hover {
     transform: translateY(0%) translateX(0%);
     transition-timing-function: ease-in-out;
     transition-delay: .5s;
-    top: 206px;  
-    left: 206px;
+    top: 0px;  
+    left: 0px;
     transition: all 1s;
     background-image: url("../assets/fotos/fotos-inicio-destacadas/Foto\ 4.jpg");
     background-size: cover;
@@ -216,66 +217,34 @@ ol {
   /*** Oferta 2 ***/
   .contenidoDos {
     position: absolute; 
-    top: 285px;
-    left: 225px;
-    width: 50%;   
-    height: 50%;
-    text-align: end;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;   
+    height: 100%;
     justify-content: center;
-    transform: translateY(0%) translateX(0%);
     transition: all 1s;
   }
-  .contenidoDos::after {
+  &::after {
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 100%;
-    transform: translateY(20%)translateX(20%);
+    transform: translateY(100%)translateX(100%);
     transition: all 2s ;
   }
   .contenidoDos:hover {
     transform: translateY(0%) translateX(0%);
     transition-timing-function: ease-in-out;
     transition-delay: .5s;
-    top: 206px;  
-    left: 206px;
+    top: 0px;  
+    left: 0px;
     transition: all 1s;
     background-image: url("../assets/fotos/fotos-inicio-destacadas/foto\ d.jpg");
     background-size: cover;
     border-radius: 5px;
   }
 }
-@media (max-width: 360px) {
-  .cajaFoto {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  .contenido {
-  position: absolute; 
-  top: 300px;
-  left: 260px;
-  width: 40%;   
-  height: 40%;
-  transform: translateY(0%) translateX(0%);
-  transition: all 1s;
-}
-}
-}
-@media (max-width: 1200px) {
-  .cajaFoto {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  .contenido {
-  position: absolute; 
-  top: 176px;
-  left: 153px;
-  width: 40%;   
-  height: 40%;
-  transform: translateY(0%) translateX(0%);
-  transition: all 1s;
-}
-}
-} 
+
 .cocheChico:hover , .cocheGrande:hover {
   transition: all .2s;
   transform: scale(1.1);
@@ -324,20 +293,20 @@ ol {
   font-size: 2rem;
   margin-bottom: 2px;
   background-image: linear-gradient(
-    to right,
-    #F4B183 30%,
-    #443d38 70%,
-  
+    to top,
+    #9d9588 -100rem,
+    #05232f -100rem,
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border: solid 3px #443d38 ;
-  animation: color 10s linear infinite;
+  animation: precio 30s linear infinite;
 }
 @media (max-width: 1400px){
   .listaDestacada {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  margin-bottom: 2px;
   }
 }
 /*** Footer ***/
