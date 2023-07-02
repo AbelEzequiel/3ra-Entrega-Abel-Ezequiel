@@ -179,30 +179,28 @@ ol {
   overflow: hidden;
   border-radius: 5px;
   .contenido {
-    position: absolute; 
-    top: 0;
+    position: absolute;
+    top: -200px;
     left: 0;
-    text-align: center;
-    justify-content: center;
-    width: 100%;   
+    width: 100%;
     height: 100%;
-    transform: translateY(0%) translateX(0%);
-    transition: all 1s;
+    transform: translateY(0%);
+    transition: all 1s .5s;
+    text-align: center;
   }
   &::after {
     position: absolute;
-    width: auto;
+    width: 100%;
     height: 100%;
-    transform: translateY(100%)translateX(100%);
-    transition: all 2s ;
+    transform: translateY(100%);
+    transition: all 1s 2s;
   }
   .contenido:hover {
-    transform: translateY(0%) translateX(0%);
-    transition-timing-function: ease-in-out;
-    transition-delay: .5s;
-    top: 0px;  
-    left: 0px;
-    transition: all 1s;
+    transform: translateY(0%);
+    top: 0;
+    left: 0;
+    transition: all 2s;
+    text-align: center;
     background-image: url("../assets/fotos/fotos-inicio-destacadas/Foto\ 4.jpg");
     background-size: cover;
     border-radius: 5px;
@@ -216,29 +214,28 @@ ol {
   }
   /*** Oferta 2 ***/
   .contenidoDos {
-    position: absolute; 
-    top: 0;
+    position: absolute;
+    top: -200px;
     left: 0;
-    text-align: center;
-    width: 100%;   
+    width: 100%;
     height: 100%;
-    justify-content: center;
-    transition: all 1s;
+    transform: translateY(0%);
+    transition: all 1s .5s;
+    text-align: center;
   }
   &::after {
     position: absolute;
-    width: auto;
+    width: 100%;
     height: 100%;
-    transform: translateY(100%)translateX(100%);
-    transition: all 2s ;
+    transform: translateY(100%);
+    transition: all 1s 2s;
   }
   .contenidoDos:hover {
-    transform: translateY(0%) translateX(0%);
-    transition-timing-function: ease-in-out;
-    transition-delay: .5s;
-    top: 0px;  
-    left: 0px;
-    transition: all 1s;
+    transform: translateY(0%);
+    top: 0;
+    left: 0;
+    transition: all 2s;
+    text-align: center;
     background-image: url("../assets/fotos/fotos-inicio-destacadas/foto\ d.jpg");
     background-size: cover;
     border-radius: 5px;
